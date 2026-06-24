@@ -1,0 +1,20 @@
+{
+  "name": "playwright-ai-test-suite",
+  "version": "1.0.0",
+  "description": "Playwright E2E test suite for AI-powered applications",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test tests/api/",
+    "test:ui": "playwright test tests/ui/",
+    "test:mcp": "playwright test tests/mcp/",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "lint": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  }
+}
